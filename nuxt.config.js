@@ -16,7 +16,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' }]
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' }
+    ]
   },
 
   /*
@@ -27,7 +28,14 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    'assets/css/main.scss',
+    'assets/css/buefy_custom.scss',
+    '@fortawesome/fontawesome-free-webfonts',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
+  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -42,8 +50,14 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    'nuxt-fontawesome',
     '@nuxtjs/pwa'
   ],
+
+  workbox: {
+    dev: true, //開発環境でもPWA
+  },
+
   /*
   ** Axios module configuration
   */
@@ -69,5 +83,10 @@ module.exports = {
         })
       }
     }
+  },
+
+  generate: {
+    fallback: true
   }
+
 }

@@ -11,10 +11,12 @@
           href="/"
         >
           <img
-            src="~assets/buefy.png"
-            alt="Buefy"
+            src="~assets/iconTaroth.png"
+            alt="KulveTaroth"
             height="28"
           >
+          &nbsp;
+          <span>マムタロト集会所</span>
         </a>
 
         <div class="navbar-burger">
@@ -63,9 +65,14 @@ export default {
           to: { name: 'index' }
         },
         {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
+          title: 'Party',
+          icon: 'axe',
+          to: { name: 'party' }
+        },
+        {
+          title: 'Member',
+          icon: 'account-multiple',
+          to: { name: 'members' }
         }
       ]
     }
