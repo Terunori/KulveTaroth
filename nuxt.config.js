@@ -1,6 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
+  // SSRでなく1page, spa
   mode: 'spa',
 
   /*
@@ -13,7 +14,9 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' }]
   },
 
   /*

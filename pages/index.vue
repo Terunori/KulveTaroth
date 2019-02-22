@@ -2,31 +2,31 @@
   <section class="section">
     <div class="columns is-mobile">
       <card
-        title="Free"
-        icon="github-circle"
+        title="Kuaty"
       >
-        Open source on <a href="https://github.com/buefy/buefy"> GitHub</a>
+      <img src="~/assets/img/yaku.jpg">
+        Kulve-taroth lover
       </card>
 
       <card
-        title="Responsive"
-        icon="cellphone-link"
+        title="Yoshihara"
       >
-        <b class="has-text-grey">Every</b> component is responsive
+      <img src="~/assets/img/amane.jpg">
+        Wrapped in the wind
       </card>
 
       <card
-        title="Modern"
-        icon="alert-decagram"
+        title="Mutoh"
       >
-        Built with <a href="https://vuejs.org/">Vue.js</a> and <a href="http://bulma.io/">Bulma</a>
+      <img src="~/assets/img/muto.jpg">
+        Au Crepuscule de La Vie
       </card>
 
       <card
-        title="Lightweight"
-        icon="arrange-bring-to-front"
+        title="Ihara"
       >
-        No other internal dependency
+      <img src="~/assets/img/teru.jpg">
+        Just ihara.
       </card>
     </div>
   </section>
