@@ -17,7 +17,7 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' }
-    ]
+    ],
   },
 
   /*
@@ -40,7 +40,10 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    '~/plugins/auth.js',
+    '~/plugins/firebase.js',
+  ],
 
   /*
   ** Nuxt.js modules
@@ -87,6 +90,6 @@ module.exports = {
 
   generate: {
     fallback: true
-  }
+  },
 
 }
