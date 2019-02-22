@@ -1,5 +1,5 @@
 {
-  "name": "KulveTaroth",
+  "name": "kulve_taroth",
   "version": "1.0.0",
   "description": "Meeting place which gathers 4teams to defeat Kulve Taroth",
   "author": "teru",
@@ -21,6 +21,8 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
+    "firebase": "^5.8.4",
+    "firebaseui": "^3.5.2",
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
     "nuxt-buefy": "^0.3.2",

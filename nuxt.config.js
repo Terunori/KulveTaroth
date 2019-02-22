@@ -16,8 +16,12 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' }
-    ],
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900'
+      }
+    ]
   },
 
   /*
@@ -34,16 +38,13 @@ module.exports = {
     '@fortawesome/fontawesome-free-webfonts',
     '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
     '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
-    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    '~/plugins/auth.js',
-    '~/plugins/firebase.js',
-  ],
+  plugins: ['~/plugins/firebase.js'],
 
   /*
   ** Nuxt.js modules
@@ -58,7 +59,8 @@ module.exports = {
   ],
 
   workbox: {
-    dev: true, //開発環境でもPWA
+    // 開発環境でもPWA
+    dev: true
   },
 
   /*
@@ -90,6 +92,5 @@ module.exports = {
 
   generate: {
     fallback: true
-  },
-
+  }
 }
