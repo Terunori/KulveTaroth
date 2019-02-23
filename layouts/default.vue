@@ -19,33 +19,35 @@
           <span>マムタロト集会所</span>
         </a>
 
-        <div class="navbar-burger">
+        <div class="navbar-burger" data-target="navMenu" @click="toggleMenu" :class="{'is-active': isMenuActive}">
           <span />
           <span />
           <span />
         </div>
       </div>
-    </nav>
+    </nav><!-- navbar-brand END -->
 
     <section class="main-content columns">
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">
-          General
-        </p>
-        <ul class="menu-list">
-          <li
-            v-for="(item, key) of items"
-            :key="key"
-          >
-            <nuxt-link
-              :to="item.to"
-              exact-active-class="is-active"
+      <div class="navbar-menu" id="navMenu" :class="{'is-active': isMenuActive}">
+        <aside class="column is-10 section" >
+          <p class="menu-label is-hidden-touch">
+            General
+          </p>
+          <ul class="menu-list" >
+            <li
+              v-for="(item, key) of items"
+              :key="key"
             >
-              <b-icon :icon="item.icon" /> {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </aside>
+              <nuxt-link
+                :to="item.to"
+                exact-active-class="is-active"
+              >
+                <b-icon :icon="item.icon" /> {{ item.title }}
+              </nuxt-link>
+            </li>
+          </ul>
+        </aside>
+      </div>
 
       <div class="container column is-10">
         <nuxt />
@@ -79,7 +81,13 @@ export default {
           icon: 'android-messages',
           to: { name: 'talkroom' }
         }
-      ]
+      ],
+      isMenuActive: false
+    }
+  },
+  methods: {
+    toggleMenu () {
+      this.isMenuActive = !this.isMenuActive
     }
   }
 }

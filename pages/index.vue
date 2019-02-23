@@ -7,11 +7,14 @@
       <img  style='height:30vh;' src='~assets/iconTaroth.png'>
     </div>
     <div class='columns is-mobile'>
-      <p>
-        マムタロト（英語名: Kulve Taroth）は16人で挑むモンスターです。
-        ログインしてパーティを組みましょう。
-      </p>
-      <h2> 一狩りいこうぜ！ </h2>
+      マムタロト（英語名: Kulve Taroth）は16人で挑むモンスターです。
+      ログインしてパーティを組みましょう。
+    </div>
+    <div class='columns is-mobile'>
+      一狩り行こうぜ！
+    </div>
+    <div class="columns is_mobile">
+      &nbsp;
     </div>
     <div class="columns is-mobile">
       <div class="links">
