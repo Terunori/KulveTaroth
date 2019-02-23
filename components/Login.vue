@@ -19,3 +19,5 @@ export default {
   }
 };
 </script>
+
+// FirebaseUIでログインするためのもの。現在不使用。

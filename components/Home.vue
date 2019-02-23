@@ -1,5 +1,5 @@
 <template>
-    <button @click="twitterLogin">twitterでログイン</button>
+    <button class="button is-info" @click="twitterLogin"><i class="fab fa-twitter"></i> &nbsp; twitterでログイン</button>
 </template>
 
 <script>

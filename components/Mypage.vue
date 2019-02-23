@@ -1,7 +1,9 @@
 <template>
-<div id="mypage">
-  <span>こんにちは, {{ user.displayName }}さん</span>
-  <button @click="logout">ログアウト</button>
+<div id="mypage" class="columns is-mobile">
+  <div class="columns is-mobile">
+    こんにちは, {{ user.displayName }}さん
+  </div>
+  <button class="button is-danger is-outlined" @click="logout">ログアウト</button>
 </div>
 </template>
 

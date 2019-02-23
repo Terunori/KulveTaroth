@@ -3,7 +3,7 @@
     <div class="columns is-mobile">
       <h1> team Kuaty </h1>
     </div>
-    <div class="columns is-mobile">
+    <div class="columns is-desktop">
       <card
         title="Kuaty"
       >
