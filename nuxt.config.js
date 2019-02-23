@@ -57,6 +57,11 @@ module.exports = {
     'nuxt-fontawesome',
     '@nuxtjs/pwa'
   ],
+  manifest: {
+    name: 'マムタロト集会所',
+    short_name: 'マム',
+    lang: 'ja'
+  },
 
   workbox: {
     // 開発環境でもPWA

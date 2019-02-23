@@ -73,6 +73,11 @@ export default {
           title: 'Member',
           icon: 'account-multiple',
           to: { name: 'members' }
+        },
+        {
+          title: 'Talkroom',
+          icon: 'android-messages',
+          to: { name: 'talkroom' }
         }
       ]
     }
