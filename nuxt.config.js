@@ -44,7 +44,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~/plugins/firebase.js'],
+  plugins: ['~/plugins/firebase.js', '~/plugins/auth.js'],
 
   /*
   ** Nuxt.js modules
@@ -77,6 +77,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    // analyze: true,
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
